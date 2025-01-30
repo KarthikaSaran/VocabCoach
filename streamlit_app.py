@@ -3,9 +3,9 @@ import requests
 
 st.title("📖 AI-Powered Dictionary")
 
-word = st.text_input("Enter a word to look up:")
+word = st.text_input("What's your vocab query?")
 
-if st.button("Get Meaning"):
+if st.button("Hit Me!"):
     response = requests.get(f"https://my-ai-dictionary.onrender.com/define/{word}")
     if response.status_code == 200:
         data = response.json()
