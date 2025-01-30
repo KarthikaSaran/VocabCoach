@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 st.title("📖 AI-Powered Dictionary")
 
